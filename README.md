@@ -12,6 +12,8 @@ push to `main`.
 index.html            Home: headline + iPhone showing the app's Home screen
 privacy/index.html    Privacy Policy  → /privacy/
 terms/index.html      Terms of Service → /terms/
+support/index.html    Support (App Store "Support URL") → /support/, unlisted
+marketing/index.html  Marketing (App Store "Marketing URL") → /marketing/, unlisted
 404.html              Not-found page
 assets/style.css      Styles — colours mirror the app's DesignSystem "Mesh Noir" palette
 assets/main.js        Header glass on scroll
@@ -40,6 +42,8 @@ Then open http://localhost:4321.
   sips --resampleWidth 720 -s format jpeg -s formatOptions 85 home.png --out assets/home.jpg
   ```
 
+- **Support and Marketing pages** — linked only from the App Store listing: nothing on the site links
+  to them, they are left out of `sitemap.xml`, and `noindex` keeps them out of search results.
 - **Legal text** — when the policy or terms change, update the “Last updated” date too. The App
   Store listing links to `https://rozacyclesync.com/privacy/`.
 

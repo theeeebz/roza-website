@@ -616,6 +616,10 @@ p {
   line-height: 1.25;
 }
 
+.prose > :first-child {
+  margin-top: 0;
+}
+
 .prose h3 {
   margin: var(--xl) 0 var(--xxs);
   font-size: 18px;
@@ -643,7 +647,7 @@ p {
   color: var(--tint);
 }
 
-.prose a {
+.prose a:not(.btn) {
   color: var(--tint);
 }
 
