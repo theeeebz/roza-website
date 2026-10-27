@@ -3,7 +3,7 @@
 The site for [rozacyclesync.com](https://rozacyclesync.com): one screen showing Roza's Home in an
 iPhone frame, a link to the App Store, and the Privacy Policy and Terms of Service.
 
-Plain HTML and CSS — no framework, no build step. Hosted on Cloudflare Pages, which deploys every
+Plain HTML and CSS — no framework, no build step. Hosted on GitHub Pages, which publishes every
 push to `main`.
 
 ## Layout
@@ -45,10 +45,18 @@ Then open http://localhost:4321.
 
 ## Deploy
 
-Cloudflare Pages project connected to this repository:
+GitHub Pages, publishing the root of `main` (Settings → Pages). Every push to `main` goes live in
+a minute or two.
 
-- Production branch: `main`
-- Build command: none
-- Build output directory: `/`
+- `CNAME` holds the custom domain, `rozacyclesync.com`; GitHub redirects `www.` to it.
+- `.nojekyll` tells Pages to serve the files as they are, without running Jekyll.
 
-Pull requests get their own preview URL.
+The domain is registered with GoDaddy, whose DNS points at GitHub:
+
+| Type  | Name  | Value                                    |
+|-------|-------|------------------------------------------|
+| A     | `@`   | 185.199.108.153                          |
+| A     | `@`   | 185.199.109.153                          |
+| A     | `@`   | 185.199.110.153                          |
+| A     | `@`   | 185.199.111.153                          |
+| CNAME | `www` | theeeebz.github.io                       |
