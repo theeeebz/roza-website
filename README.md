@@ -31,7 +31,7 @@ Then open http://localhost:4321.
 ## Common changes
 
 - **App Store link** — `https://apps.apple.com/app/id6754796676`, in the header of every page.
-- **Contact email** — the `mailto:` links in every page's header and footer, plus section 9 of the
+- **Contact email** — the `mailto:` links in every page's header and footer, plus section 8 and section 11 of the
   Privacy Policy and section 12 of the Terms.
 - **Home screenshot** — capture Home in the simulator with a clean status bar, then replace
   `assets/home.jpg` at 720px wide:
